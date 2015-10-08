@@ -1,6 +1,7 @@
+
 <nav class="white" role="navigation">
   <div class="nav-wrapper container">
-    <a id="logo-container" href="/" class="brand-logo red-text">YeYo</a>
+    <a id="logo-container" href="/" class="brand-logo center red-text">YeYo</a>
     <ul class="right hide-on-med-and-down">
       <!-- <li><a href="/users/new">Sign Up</a></li>
       <li><a href="/users/login">Login</a></li> -->
@@ -19,18 +20,18 @@
     <div class="container">
       <br><br>
       <h1 class="header center white-text text-lighten-2">See Us Live</h1>
-      <div class="row center">
+      <div class="row center main" id="form">
         <!-- <h5 class="header col s12 light">We are always on tour</h5> -->
         <form class="col s4 offset-s4 create-signup" action="/api/signups" method="post">
           <input type="text" id="my-name" name="signup[name]" placeholder="Name ">
+          <p id="p1"></p> <!--This Segment Displays The Validation Rule For Name-->
           <input type="text" id="my-email" name="signup[email]" placeholder="Email">
+          <p id="p3"></p> <!-- This Segment Displays The Validation Rule For Email -->
           <button class="btn-large waves-effect waves-light red lighten-1" id="download-button" type="submit" name="action">Sign Up
         </button>
         </form>
       </div>
       <br><br>
-
-
 
 
 
@@ -41,11 +42,12 @@
 
 <section>
   <div class="row center">
+  <div class="col s4 offset-s4">
+    <h3>Sign Ups</h3>
+  </div>
+
   <div class="col s4 offset-s4" id='all-the-signups'>
-<ul>
-  <li>he</li>
-  <li>he</li>
-</ul>
+
 
 
   </div>
